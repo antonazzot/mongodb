@@ -1,0 +1,15 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://root:hello@localhost:27017/mongodb?authSource=admin
+
+profile:
+  str: prod
+
+logging:
+  level:
+    com.profiler.profilerartifact.config.CustomPerformanceMonitorInterceptor: TRACE
+
+profiling:
+  pointcuts:
+    com.example.mongo.mongo.services
